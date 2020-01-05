@@ -1,3 +1,19 @@
+#define MEDICBAGCONTENTS {\
+        {"ACE_fieldDressing",10},\
+        {"ACE_packingBandage",15},\
+        {"ACE_elasticBandage",10},\
+        {"ACE_quikclot",10},\
+        {"ACE_morphine",10},\
+        {"ACE_adenosine",5},\
+        {"ACE_splint",5},\
+        {"ACE_tourniquet",5},\
+        {"ACE_salineIV_500",3},\
+        {"ACE_personalAidKit",1},\
+        {"rhs_mag_m18_green",2},\
+        {"rhs_mag_an_m8hc",1},\
+        {"rhs_mag_m18_purple",2}\
+    }
+
 // class TB3_Gear {
     class USSOF_Night {
         class SOF_HeliPilot {
@@ -22,12 +38,13 @@
             uniformContents[] = {
                 {"ACE_fieldDressing",2},
                 {"ACE_quikclot",2},
+                {"ACE_packingBandage",2},
+                {"ACE_elasticBandage",1},
+                {"ACE_morphine",1},
+                {"ACE_splint",1},
+                {"ACE_tourniquet",1},
                 {"ACE_microDAGR",1},
                 {"ACE_Flashlight_XL50",1},
-                {"ACE_morphine",1},
-                {"ACE_tourniquet",1},
-                {"ACE_elasticBandage",1},
-                {"ACE_packingBandage",2},
                 {"ACRE_PRC152",1},
                 {"ACE_IR_Strobe_Item",1},
                 {"rhs_mag_m18_green",1},
@@ -193,19 +210,7 @@
                 {"rhsusf_mag_7x45acp_MHP",1}
             };
 
-            backpackContents[] = {
-                {"ACE_fieldDressing",10},
-                {"ACE_packingBandage",15},
-                {"ACE_elasticBandage",10},
-                {"ACE_tourniquet",4},
-                {"ACE_morphine",10},
-                {"ACE_salineIV_250",4},
-                {"ACE_personalAidKit",1},
-                {"ACE_quikclot",10},
-                {"rhs_mag_m18_green",2},
-                {"rhs_mag_an_m8hc",1},
-                {"rhs_mag_m18_purple",2}
-            };
+            backpackContents[] = MEDICBAGCONTENTS;
         };
         class Operator_GL: Operator_Base {
             weapons[] = {"rhs_weap_mk18_m320","ACE_Vector"};
@@ -312,7 +317,7 @@
         };
         class Blackhawk {
             vehCargoWeapons[] = {
-                {"rhs_weap_m4_carryhandle",1},{"rhs_weap_M320",1}
+                {"rhs_weap_m4_carryhandle",2},{"rhs_weap_M320",1}
             };
             vehCargoMagazines[] = {
                 {"rhs_mag_30Rnd_556x45_M855A1_Stanag",16},
@@ -324,29 +329,15 @@
                 {"ACE_40mm_Flare_ir",8},
                 {"ACE_HandFlare_Green",16},
                 {"ACE_Chemlight_HiWhite",16},
-                {"ACE_Chemlight_HiGreen",16},
-                {"DemoCharge_Remote_Mag",4},
-                {"SatchelCharge_Remote_Mag",2}
+                {"ACE_Chemlight_HiGreen",16}
             };
             vehCargoItems[] = {
-                {"FirstAidKit",2},
+                {"FirstAidKit",4},
                 {"ToolKit",1},
-                {"ACE_M26_Clacker",1}
+                {"ACE_bodyBag",6},
             };
             vehCargoRucks[] = {
-                {"rhsusf_falconii_coy",1,{
-                    {"ACE_fieldDressing",10},
-                    {"ACE_packingBandage",15},
-                    {"ACE_elasticBandage",10},
-                    {"ACE_tourniquet",4},
-                    {"ACE_morphine",10},
-                    {"ACE_salineIV_250",4},
-                    {"ACE_personalAidKit",1},
-                    {"ACE_quikclot",10},
-                    {"rhs_mag_m18_green",2},
-                    {"rhs_mag_an_m8hc",1},
-                    {"rhs_mag_m18_purple",2}
-                }},
+                {"rhsusf_falconii_coy",1,MEDICBAGCONTENTS},
                 {"rhsusf_falconii",2,{
                     {"rhs_mag_30Rnd_556x45_M855A1_Stanag",6},
                     {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
@@ -354,6 +345,12 @@
                 }},
                 {"rhsusf_falconii_mc",1,{
                     {"rhs_mag_30Rnd_556x45_M855A1_Stanag",16},
+                    {"rhs_mag_an_m8hc",1}
+                }},
+                {"rhsusf_falconii_coy",1,{
+                    {"DemoCharge_Remote_Mag",3},
+                    {"SatchelCharge_Remote_Mag",1},
+                    {"ACE_M26_Clacker",1},
                     {"rhs_mag_an_m8hc",1}
                 }}
             };
