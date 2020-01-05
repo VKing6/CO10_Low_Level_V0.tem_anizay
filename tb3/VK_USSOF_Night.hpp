@@ -106,17 +106,19 @@
 
             uniform[] = {"rhs_uniform_g3_mc"};
             uniformContents[] = {
+                {"ACE_fieldDressing",2},
                 {"ACE_elasticBandage",2},
+                {"ACE_quikclot",2},
+                {"ACE_packingBandage",4},
+                {"ACE_morphine",2},
+                {"ACE_tourniquet",2},
+                {"ACE_splint",2},
+                {"ACE_salineIV_500",1},
                 {"ACE_CableTie",2},
                 {"ACE_Flashlight_XL50",1},
                 {"ACE_MapTools",1},
                 {"ACE_microDAGR",1},
-                {"ACE_morphine",2},
-                {"ACE_packingBandage",4},
-                {"ACE_salineIV_500",1},
-                {"ACE_tourniquet",2},
                 {"ACE_IR_Strobe_Item",2},
-                {"ACE_fieldDressing",2},
                 {"Chemlight_green",2}
             };
 
