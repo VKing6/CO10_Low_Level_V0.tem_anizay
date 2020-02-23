@@ -1,16 +1,16 @@
 #define MEDICBAGCONTENTS {\
         {"ACE_fieldDressing",10},\
-        {"ACE_packingBandage",15},\
-        {"ACE_elasticBandage",10},\
+        {"ACE_packingBandage",20},\
+        {"ACE_elasticBandage",5},\
         {"ACE_quikclot",10},\
         {"ACE_morphine",10},\
-        /*{"ACE_adenosine",5},\
-        {"ACE_splint",5},*/\
+        {"ACE_adenosine",5},\
+        {"ACE_epinephrine",5},\
         {"ACE_tourniquet",5},\
-        {"ACE_salineIV_500",3},\
+        {"ACE_salineIV_500",4},\
         {"ACE_personalAidKit",1},\
-        {"rhs_mag_m18_green",2},\
         {"rhs_mag_an_m8hc",1},\
+        {"rhs_mag_m18_green",2},\
         {"rhs_mag_m18_purple",2}\
     }
 
@@ -41,7 +41,6 @@
                 {"ACE_packingBandage",2},
                 {"ACE_elasticBandage",1},
                 {"ACE_morphine",1},
-                //{"ACE_splint",1},
                 {"ACE_tourniquet",1},
                 {"ACE_microDAGR",1},
                 {"ACE_Flashlight_XL50",1},
@@ -112,7 +111,6 @@
                 {"ACE_packingBandage",4},
                 {"ACE_morphine",2},
                 {"ACE_tourniquet",2},
-                //{"ACE_splint",2},
                 {"ACE_salineIV_500",1},
                 {"ACE_CableTie",2},
                 {"ACE_Flashlight_XL50",1},
